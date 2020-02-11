@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:background="#ce1f1f"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            android:textSize="20sp"
+            android:textColor="#6ce1cd"
+            android:textStyle="bold"
+            android:text="@string/title"/>
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_margin="3dp"
+                android:textSize="13sp"
+                android:text="Customer Name"/>
+            <Spinner
+                android:id="@+id/custName"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_margin="3dp"
+                android:entries="@array/cus_name"
+                android:background="@drawable/edit_text_drawable"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_margin="3dp"
+                android:textSize="13sp"
+                android:text="Location/Address"/>
+            <Spinner
+                android:id="@+id/locatAdr"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_margin="3dp"
+                android:entries="@array/location_fmcg"
+                android:background="@drawable/edit_text_drawable"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_margin="3dp"
+                android:textSize="13sp"
+                android:text="Reporting Date"/>
+            <EditText
+                android:id="@+id/dt"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/edit_text_drawable"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_margin="3dp"
+                android:textSize="13sp"
+                android:text="Market Name"/>
+            <Spinner
+                android:id="@+id/mktName"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_margin="3dp"
+                android:entries="@array/mkt_fmcg"
+                android:background="@drawable/edit_text_drawable"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_margin="3dp"
+                android:textSize="13sp"
+                android:text="Product Name"/>
+            <Spinner
+                android:id="@+id/prodtName"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_margin="3dp"
+                android:entries="@array/product_fmcg"
+                android:background="@drawable/edit_text_drawable"/>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/meas"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin="3dp"
+            android:layout_gravity="center"
+            android:background="@drawable/edit_text_drawable"
+            android:hint="Enter Measurement"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/firstNum"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:inputType="numberDecimal"
+            android:background="@drawable/edit_text_drawable"
+            android:hint="No of Cartons"/>
+        <EditText
+            android:id="@+id/secondNum"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_marginStart="5dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:inputType="numberDecimal"
+            android:background="@drawable/edit_text_drawable"
+            android:hint="Qty in Carton"/>
+        <TextView
+            android:id="@+id/totalCP"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_marginStart="5dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:inputType="numberDecimal"
+            android:background="@drawable/edit_text_drawable"
+            android:textSize="20sp"
+            android:hint="Total"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/fstNum"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:inputType="numberDecimal"
+            android:background="@drawable/edit_text_drawable"
+            android:hint="No of Rolls"/>
+        <EditText
+            android:id="@+id/secNum"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_marginStart="5dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:inputType="numberDecimal"
+            android:background="@drawable/edit_text_drawable"
+            android:hint="Qty in Roll"/>
+        <TextView
+            android:id="@+id/totalRP"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_marginStart="5dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:inputType="numberDecimal"
+            android:background="@drawable/edit_text_drawable"
+            android:textSize="20sp"
+            android:hint="Total"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/extraPcs"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:inputType="numberDecimal"
+            android:background="@drawable/edit_text_drawable"
+            android:hint="Extra Pieces"/>
+
+        <TextView
+            android:id="@+id/answer"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:text="Total Pieces"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submitBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#4848ce"
+        android:onClick="onClick"
+        android:text="@string/submit"/>
+
+    </LinearLayout>
+</ScrollView>
